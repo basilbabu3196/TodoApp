@@ -1,0 +1,52 @@
+<div class="topnav">
+    <a routerLink="">Home</a>
+    <a href="">About</a>
+    <a href="#contact">Contact</a>
+   </div>
+<div align="center">
+<div class="card" >
+
+<form action="" [formGroup]="registerForm" (ngSubmit)="register()">
+<div class="container">
+    <h1 style="text-align:center;color: rgb(255, 94, 0);"> <b>TO-DO  APP</b></h1>
+    <h2 style="text-align:center;color: rgb(25, 0, 255);">SIGN UP</h2>
+
+    <label for="email">Username</label>
+
+    <input type="text" placeholder="Enter Email OR MOBILE NUMBER" formControlName="username" name="username" id="email" required>
+    <!-- <div  class="error"> invaLID USERname</div>
+​ -->
+
+    <label for="psw">Name</label>
+
+    <input type="text" placeholder="Enter YOUR NAME" formControlName="name" name="name" id="psw" required>
+
+​
+
+    <label for="psw-repeat">Password</label>
+
+    <input type="password" placeholder="New Password" formControlName="password" name="password" id="psw-repeat" required>
+
+    <hr>
+
+     <input type="submit" (click)="register()" value="Sign up" class="registerbtn">&nbsp;
+    <input type="reset" value="Cancel" class="cancelbtn">
+  </div>
+
+  
+
+  <div class="container signin">
+
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+
+  </div>
+
+</form>
+
+​</div>
+</div>
+
+
+​
+
+

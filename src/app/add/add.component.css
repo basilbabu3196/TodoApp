@@ -1,0 +1,57 @@
+.example-full-width{
+    width:100%;
+}
+
+.login-form{
+    padding:20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(53, 53, 53);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(49, 11, 11)
+  }
+  
+  .active {
+    background-color: #319424e8;
+    border-color: #ff3434;
+
+  }
+.next{
+    background-color: #0a1309e8;
+}
+  .out {
+    background-color: #f00000e8;
+    border-color: #b32727;
+
+  }
+  .active:hover{
+    background-color: #66ff00;
+  }
+  .todo{
+
+      color: rgb(255, 142, 13);
+      font-size: xx-large;
+      font-weight: bold;
+     
+     
+
+  }

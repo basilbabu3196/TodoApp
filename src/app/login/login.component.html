@@ -1,0 +1,51 @@
+<div class="topnav">
+    <a routerLink="">Home</a>
+    <a href="">About</a>
+    <a href="#contact">Contact</a>
+   
+  </div>
+<div class="container">
+   
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="row">
+          <h2 style="text-align:center;color: rgb(255, 94, 0);"> <a class="logo">TO-DO  APP</a></h2>
+        <h3 style="text-align:center">LOGIN</h3>
+        <div class="vl">
+          <span class="vl-innertext">or</span>
+        </div>
+  
+        <div class="col">
+          <a href="https://www.facebook.com/r.php?locale=EN_US&campaign_id=973072070&extra_1=s%7Cc%7C231327447305%7Ce%7Cfacebook%20login%7C&placement=&creative=231327447305&keyword=facebook%20login&partner_id=googlesem&extra_2=campaignid%3D973072070%26adgroupid%3D54006291331%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-296713338648%26loc_physical_ms%3D1007776%26loc_interest_ms%3D%26feeditemid%3D19894516786%26param1%3D%26param2%3D&gclid=CjwKCAjwv_iEBhASEiwARoemvA7rQZpcLD4ewpnpPl2TYO1DgRDG-DqRLULuLIEUmgJLWFc3O6qqtBoCSiQQAvD_BwE"
+           class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+           </a>
+         
+          <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="google btn"><i class="fa fa-google fa-fw">
+            </i> Login with Google
+          </a>
+        </div>
+  
+        <div class="col">
+          <div class="hide-md-lg">
+            <p>Or sign in manually:</p>
+          </div>
+  
+          <input type="text" name="username" formControlName="username"  id="acno" placeholder="Username" required>
+          <input type="password" name="password" formControlName="password"  placeholder="Password" required>
+          <input type="submit" (click)="login()" value="Login">
+        </div>
+        
+      </div>
+    </form>
+  </div>
+  
+  <div class="bottom-container">
+    <div class="row">
+      <div class="col">
+        <a routerLink="registration" class="btn">Sign up</a>
+      </div>
+      <div class="col">
+        <a href="#" style="color:rgb(247, 0, 41)" class="btn">Forgot password?</a>
+      </div>
+    </div>
+  </div>
